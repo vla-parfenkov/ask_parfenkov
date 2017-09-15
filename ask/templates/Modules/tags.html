@@ -1,0 +1,8 @@
+{%block tags%}
+    <div class="popular-tags">
+        <h2>Тэги</h2>
+        {%for tag in tags%}
+        <a href="{% url 'tag' tag.name %}">{{tag.name}}</a>
+        {%endfor%}
+    </div>
+{%endblock tags%}

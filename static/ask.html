@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ask</title>
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/my-style.css" rel="stylesheet">
+</head>
+
+<body class="container">
+
+  <!--General container-->
+  <div class="container">
+    <!--Longass navbar-->
+    <div class="navbar navbar-default navbar-inverse">
+    </div>
+    <!--first offset-->
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="row">
+        <div class="col-sm-8">
+          <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <a class="navbar-brand my_color" href="#">Вопрос-Ответ</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li><a href="./index.html" class="my_color">Главная</a></li>
+              </ul>
+              <form class="navbar-form navbar-left" role="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Искать">
+                </div>
+                <button type="submit"><span class="glyphicon glyphicon-search" aria-hidden="true"></button>
+              </form>
+              <ul class="nav navbar-nav">
+                <li><a href="./ask.html" class="my_color">Спросить</a></li>
+              </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+          </div>
+        </div>
+        <!-- /.container-fluid -->
+        <div class="col-sm-4">
+          <div class="row">
+            <div class="col-sm-4">
+              <img src="http://lorempixel.com/50/50/" class="avatar">
+            </div>
+            <div class="col-sm-8">
+              <div class="user-name"><a href="./settings.html">Никнейм</a></div>
+              <div class="options"><a href="./settings.html"><span class="glyphicon glyphicon-cog" aria-hidden="true"></a>
+                <a href="#"><span class="glyphicon glyphicon-off" aria-hidden="true"></span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--/Longass navbar-->
+
+  <!--Filling-->
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-9">
+        
+<h3>Новый вопрос</h3>
+      <form>
+        <div class="input-group">
+          <input type="text" class="form-control question-field-alignment" placeholder="Заголовок">
+        </div><p>
+
+        <div class="input-group">
+          <textarea rows="10" class="question-field-alignment"></textarea>
+        </div><p>
+
+        <div class="input-group">
+          <input type="text" class="form-control question-field-alignment" placeholder="Тэги">
+        </div><p>
+
+        <div class="input-group">
+          <button type="submit" class="form-control">Задать вопрос</button>
+        </div><p>
+      </form>
+      <div class="row error">Укажите заголовок</div>
+      </div>
+      <div class="col-sm-3">
+        <div class="popular-tags">
+          <h2>Тэги</h2>
+          спросить пишут информацию
+        </div>
+        <hr>
+        <div class="popular-massage">
+          <h2>Популярные пользователи</h2>
+          <a href="#">Никнейм</a> <br>
+          <a href="#">Никнейм</a> <br>
+          <a href="#">Никнейм</a> <br>
+        </div>
+      </div>
+    </div>
+    <!--/Filling-->
+  </div>
+  <!--/Pagination-->
+  <hr>
+  <footer class="footer">
+    <img src="http://lorempixel.com/1000/100/">
+  </footer>
+  </div>
+  <!--/General container-->
+
+  <h1></h1>
+</body>
+
+</html>
+

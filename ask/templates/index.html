@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+
+{% block title %}
+Главная
+{% endblock title %}
+
+{% block content %}
+    <div class="col-sm-9">
+        {% for question in recent %}
+	        {% include "Modules/question.html" %}
+        {% endfor %}
+      </div>
+{% endblock %}
+
+{% block paginator %}
+   {% include "Modules/Paginator.html" %}
+{% endblock %}

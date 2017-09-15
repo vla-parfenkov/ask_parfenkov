@@ -1,0 +1,238 @@
+
+.navbar {
+	background-color: rgb(180, 0, 0);
+	color: rgb(180, 180, 180);;
+	border-color: rgb(180, 0, 0);
+	max-height: 50px;
+	overflow: hidden;
+}
+
+
+
+.margin-log {
+	padding-right: 3%;
+}
+
+.navbar-collapse {
+	float: left;
+}
+
+.my_color {
+       color: rgb(250, 250, 250) !important;
+}
+
+
+.active {
+	background-color: rgb(250, 0, 0);
+	color: rgb(0, 0, 0) !important;
+}
+
+.row {
+	margin-bottom: 2%;
+}
+
+hr {
+	border-color: rgb(255, 255, 255);
+}
+
+
+
+.question {
+	cursor: pointer;
+	font-family: sans-serif;
+	font-size: 14pt;
+	background-color: rgb(180, 0, 0);
+	border-radius: 3px;
+	padding: 3px;
+        color: rgb(200, 200, 200);
+	border-color: rgb(100, 0, 0);
+	border-style: solid;
+	border-width: 1px;
+}
+
+.question:hover {
+	background-color: rgb(250, 0, 0);
+	color: rgb(250, 250, 250);
+	border-color: rgb(150, 150, 150);
+}
+
+.like {
+	margin: 5px;
+	margin-bottom: 0px;
+	width: 75%;
+
+}
+
+.like:hover {
+	width: 100%;
+}
+
+.like-count {
+	font-size: 13pt;
+	text-align: center;
+	vertical-align: bottom;
+}
+
+.like-count:hover {
+	color: rgb(120,120,120);
+	font-size: 16pt;
+}
+
+.footer {
+        background-color: rgb(180, 0, 0);
+	text-align: center;
+	color: rgb(200, 200, 200);
+	font-size: 14pt;
+}
+
+.pagination>li>a {
+	background-color: rgb(180, 0, 0);
+	color: rgb(200, 200, 200);
+	transition: color background-color;
+	transition-duration: 0.3s;
+	border: none;
+}
+
+.pagination>li>a:hover {
+	background-color: rgb(250, 0, 0);
+	color: rgb(250, 250, 250);
+}
+
+.avatar {
+	margin-right: -25px;
+	float: right;
+	padding: 5px;
+	position: relative;
+	max-width: 50px;
+	max-height: 50px;
+}
+
+.user-name>a {
+	margin-bottom: 5px;
+	color: rgb(200, 200, 200);
+	transition: color;
+	transition-duration: 0.2s;
+	text-decoration: none;
+	display: inline-block
+}
+
+.user-name>a:hover {
+	color: rgb(250, 250, 250);
+}
+
+.options {
+	margin-right: 15px;
+	color: rgb(150, 150, 150);
+}
+
+.options>a {
+	margin-right: 20px;
+	color: rgb(200, 200, 200);
+	transition: color;
+	transition-duration: 0.2s;
+	text-decoration: none;
+	display: inline-block;
+}
+
+.options>a:hover {
+	color: rgb(250, 250, 250);
+}
+
+.form-control, textarea {
+	border-radius: 3px !important;
+	background-color: rgb(255, 255, 255);
+	color: rgb(150, 150, 150);
+	border-color: rgb(100, 0, 0);
+}
+
+a, a.active, a.focus, a.visited {
+	color: rgb(100, 100, 100);
+	transition: color;
+	transition-duration: 0.2s;
+	text-decoration: none !important;
+	display: inline-block;
+}
+
+a:hover {
+	color: rgb(150, 150, 150);
+}
+
+.btn{
+     background-color: rgb(180, 0, 0);
+     color: rgb(250, 250, 250);
+}
+
+.btn:focus, .btn:active {
+	box-shadow:0 0 5px rgb(200, 200, 200);
+	outline: none;
+	border-color: rgb(200, 200, 200);
+}
+
+.form-control:focus, .form-control:active, textarea.active, textarea.focus {
+	box-shadow:0 0 5px rgb(200, 200, 200);
+	outline: none;
+	border-color: rgb(100, 100, 100);
+}
+
+.question-field-alignment {
+	min-width: 70ex;
+	max-width: 100ex;
+	max-height: 20em;
+}
+
+textarea {
+	margin-bottom: -5px;
+	position: relative;
+	outline: none;
+}
+
+.richtig {
+	background-color: rgba(0, 255, 0, 0.05);
+	border-radius: 5px;
+	padding: 5px;
+	padding-bottom: 0px;
+}
+
+
+
+.file_upload{
+    position: relative;
+    overflow: hidden;
+    font-size: 1em;     
+    height: 2em;
+    line-height: 2em;
+    display: inline-block;
+}
+
+.file_upload > button{
+    float: right;
+    width: 8em;
+    height: 100%;
+}
+
+.file_upload input[type=file]{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transform: scale(20);
+    letter-spacing: 10em;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.popular-tags{
+	margin: 30px
+}
+
+
+.popular-user{
+	margin: 30px
+}
+
+
+
+.error{
+    color: rgb(255, 0, 0)
+}

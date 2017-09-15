@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+
+
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}{% endblock %}</title>
+
+  <!-- Bootstrap -->
+  <link href="/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/css/my-style.css" rel="stylesheet">
+</head>
+
+<body class="container">
+
+
+  <!--General container-->
+  <div class="container">
+    <!--Longass navbar-->
+    <div class="navbar navbar-default navbar-inverse">
+    </div>
+    <!--first offset-->
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="row">
+        <div class="col-sm-8">
+          <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <a class="navbar-brand my_color" href="#">Вопрос-Ответ</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li><a href="{% url 'index' %}" class="my_color">Главная</a></li>
+              </ul>
+              <form class="navbar-form navbar-left" role="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Искать">
+                </div>
+                <button type="submit"><span class="glyphicon glyphicon-search" aria-hidden="true">
+                </span>
+                </button>
+              </form>
+                {% if user.is_authenticated %}
+              <ul class="nav navbar-nav">
+                <li><a href="{% url 'ask' %}" class="my_color">Спросить</a></li>
+              </ul>
+                {% endif %}
+                <ul class="nav navbar-nav">
+                    <li><a href="{% url 'hot' %}" class="my_color">Популярное</a></li>
+              </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+          </div>
+        </div>
+        <!-- /.container-fluid -->
+          {% if user.is_authenticated %}
+        <div class="col-sm-4">
+          <div class="row">
+            <div class="col-sm-4">
+              <img src="/uploads/{{profile.avatar.url}}" class="avatar">
+            </div>
+            <div class="col-sm-8">
+              <div class="user-name"><a href="#">{{ user.username }}</a></div>
+              <div class="options"><a href="#"><span class="glyphicon glyphicon-cog" aria-hidden="true"></a>
+                <a href="{% url 'logout_me' %}"><span class="glyphicon glyphicon-off" aria-hidden="true"></span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+          {% else %}
+          <div class="col-sm-4">
+          <ul class="nav navbar-nav">
+            <li><a href="{% url 'signup' %}" class="my_color">Регистрация</a></li>
+          </ul>
+          <ul class="nav navbar-nav">
+            <li><a href="{% url 'login_me' %}" class="my_color">Войти</a></li>
+          </ul>
+        </div>
+          {% endif %}
+      </div>
+    </div>
+  </div>
+  <!--/Longass navbar-->
+
+  <!--Filling-->
+  <div class="container">
+    <div class="row">
+      {% block content %}
+        {% endblock %}
+      <div class="col-sm-3">
+        {% include "Modules/tags.html" %}
+        <hr>
+        <div class="popular-massage">
+          <h2>Популярные пользователи</h2>
+          <a href="#">Никнейм</a> <br>
+          <a href="#">Никнейм</a> <br>
+          <a href="#">Никнейм</a> <br>
+        </div>
+      </div>
+    </div>
+    <!--/Filling-->
+  {% block paginator %}
+  {% endblock %}
+  </div>
+  <hr>
+  <footer class="footer">
+    <img src="http://lorempixel.com/1000/100/">
+  </footer>
+  <!--/General container-->
+
+  <h1></h1>
+</body>
+
+</html>
